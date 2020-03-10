@@ -1,0 +1,60 @@
+.header {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url('../resources/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo-wrapper img {
+  max-width: 100%;
+}
+.logo-wrapper {
+  width: 200px;
+  margin: 1.5em 1em;
+}
+
+.searchbar-wrapper {
+  width: 180px;
+  margin: 1em;
+  position: relative;
+}
+
+.searchbar-input {
+  border-radius: 30px;
+  border: 0;
+  height: 30px;
+  padding: 0 10px;
+  width: 100%;
+  font-size: 14px;
+  z-index: 27;
+  outline: 0;
+}
+
+.searchbar-input:focus {
+  background-color: #eee;
+}
+
+.suggestions {
+  overflow: hidden;
+  background: #fff;
+  max-height: 250px;
+  list-style: none;
+  margin: -12px 0 0;
+  padding: 13px 0 9px 0;
+  z-index: 1;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.suggestion-item {
+  padding: 5px 9px;
+  font-size: 12px;
+}
+
+.suggestion-item:hover,
+.suggestion-item-focused {
+  background: #eee;
+  cursor: pointer;
+}
